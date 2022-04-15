@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
   newActivity() {
     console.log(this.form.get('activity').value);
+    console.log(this.form.get('cw').value);
   }
 
   ngOnInit(): void {}

@@ -15,7 +15,7 @@
     <div class="col-sm-6 form-group">
       <label for="name">Activity</label>
       <input
-        formControlName="activity"
+        formControlName="act"
         type="text"
         class="form-control"
         placeholder="what are we doing"
@@ -42,8 +42,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12">
-      <!-- activities -->
-    </div>
+    <div class="col-sm-12"></div>
+    <ul>
+      <li *ngFor="let activity of activities">
+        {{ activity.act }} -
+        <em>{{ activity.cw | date }} </em>
+      </li>
+    </ul>
   </div>
 </div>
